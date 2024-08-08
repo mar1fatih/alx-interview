@@ -21,6 +21,7 @@ def minOperations(n):
         sum += i
     return sum
 
+
 def isprime(x):
     """check if it a prime"""
     j = 2
