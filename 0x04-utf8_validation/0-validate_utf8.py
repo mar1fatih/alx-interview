@@ -7,7 +7,12 @@ def validUTF8(data: List[int]) -> bool:
     """fuction that validate a list of integers"""
     c: int = 0
 
+    if type(data) is not list:
+        return False
+
     for ele in data:
+        if type(ele) is not int:
+            return False
         if not c:
             if ele >> 3 == 0b11110:
                 c = 3
