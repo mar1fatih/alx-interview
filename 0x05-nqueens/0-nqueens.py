@@ -28,7 +28,7 @@ if __name__ == '__main__':
             ok = True
             for queen in queens:
                 column = queen[1]
-                if(column == c or column + (r - queen[0]) == c or
+                if (column == c or column + (r - queen[0]) == c or
                         column - (r - queen[0]) == c):
                     ok = False
                     break
