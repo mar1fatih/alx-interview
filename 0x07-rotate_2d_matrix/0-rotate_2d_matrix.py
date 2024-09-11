@@ -2,10 +2,9 @@
 """
 0x07 - Rotate 2D Matrix
 """
-from typing import List
 
 
-def rotate_2d_matrix(matrix: List[list]):
+def rotate_2d_matrix(matrix):
     """ rotate 2D matrix """
     n = len(matrix)
 
