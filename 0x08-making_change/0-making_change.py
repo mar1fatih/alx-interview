@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """making change"""
-import sys
 
 
 def Change(coins, total, cache):
@@ -17,7 +16,7 @@ def Change(coins, total, cache):
     if cache[total] != 0:
         return cache[total]
 
-    _max = sys.maxsize
+    _max = total + 1
     _min = _max
     for coin in coins:
         change_result = Change(coins, total - coin, cache)
