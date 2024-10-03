@@ -10,6 +10,9 @@ def isWinner(x, nums):
 
     p = 2
 
+    if not x or not nums or len(nums) == 0:
+        return None
+
     for num in nums:
         stats = [True for i in range(num + 1)]
         while (p * p <= num):
@@ -27,5 +30,7 @@ def isWinner(x, nums):
             ben += 1
     if maria > ben:
         return 'Maria'
+    else if maria == ben:
+        return None
     else:
         return 'Ben'
