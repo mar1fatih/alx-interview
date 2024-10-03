@@ -1,22 +1,23 @@
 #!/usr/bin/python3
 """Prime Number"""
 
+
 def isWinner(x, nums):
     """counting who won the most rounds"""
     ben = 0
     maria = 0
     prime_nums = []
-    
+
     p = 2
 
     for num in nums:
         stats = [True for i in range(num + 1)]
         while (p * p <= num):
-            if stats[p] == True:
+            if stats[p] is True:
                 for i in range(p * p, num + 1, p):
                     stats[i] = False
             p += 1
-    
+
         for j in range(2, num + 1):
             if stats[j]:
                 prime_nums.append(j)
